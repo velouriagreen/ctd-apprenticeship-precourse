@@ -1,0 +1,28 @@
+{
+  "products": 
+  [{"id":1,"name":"cherries","inventory":92,"category":"fruit"},
+{"id":2,"name":"Mushroom - Morels, Dry","inventory":10,"category":"dairy"},
+{"id":3,"name":"Beets - Golden","inventory":10,"category":"dairy"},
+{"id":4,"name":"Appetizer - Spring Roll, Veg","inventory":39,"category":"dairy"},
+{"id":5,"name":"Potatoes - Purple, Organic","inventory":31,"category":"meat"},
+{"id":6,"name":"Cheese - Parmigiano Reggiano","inventory":29,"category":"dairy"},
+{"id":7,"name":"Eggwhite Frozen","inventory":56,"category":"fruit"},
+{"id":8,"name":"Chinese Foods - Thick Noodles","inventory":4,"category":"meat"},
+{"id":9,"name":"Oneshot Automatic Soap System","inventory":28,"category":"vegetable"},
+{"id":10,"name":"Muffin - Banana Nut Individual","inventory":70,"category":"vegetable"},
+{"id":11,"name":"Nantucket - Pomegranate Pear","inventory":3,"category":"meat"},
+{"id":12,"name":"Chips Potato Reg 43g","inventory":3,"category":"dairy"},
+{"id":13,"name":"Cheese - Goat With Herbs","inventory":70,"category":"fruit"},
+{"id":14,"name":"Fish - Soup Base, Bouillon","inventory":59,"category":"fruit"},
+{"id":15,"name":"Mushroom - Morels, Dry","inventory":89,"category":"fruit"},
+{"id":16,"name":"Wine - Merlot Vina Carmen","inventory":3,"category":"meat"},
+{"id":17,"name":"Seaweed Green Sheets","inventory":77,"category":"fruit"},
+{"id":18,"name":"Split Peas - Yellow, Dry","inventory":35,"category":"fruit"},
+{"id":19,"name":"Juice - Lagoon Mango","inventory":54,"category":"vegetable"},
+{"id":20,"name":"Graham Cracker Mix","inventory":46,"category":"fruit"},
+{"id":21,"name":"Beef - Kobe Striploin","inventory":81,"category":"vegetable"},
+{"id":22,"name":"Bacardi Raspberry","inventory":44,"category":"meat"},
+{"id":23,"name":"Pork - European Side Bacon","inventory":56,"category":"meat"},
+{"id":24,"name":"Pepper - Cayenne","inventory":99,"category":"dairy"},
+{"id":25,"name":"Wine - Prem Select Charddonany","inventory":84,"category":"fruit"}]
+}
