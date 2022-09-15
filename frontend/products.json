@@ -17,12 +17,12 @@
 {"id":15,"name":"Mushroom - King Trumpet","inventory":89,"category":"vegetable"},
 {"id":16,"name":"Beef - Ground","inventory":3,"category":"meat"},
 {"id":17,"name":"Seaweed - Green Sheets","inventory":77,"category":"vegetable"},
-{"id":18,"name":"Split Peas - Yellow, Dry","inventory":35,"category":"vegetable"},
+{"id":18,"name":"Split Peas - Yellow, Dry","inventory":0,"category":"vegetable"},
 {"id":19,"name":"Juice - Lagoon Mango","inventory":54,"category":"fruit"},
 {"id":20,"name":"Squash - Chayote","inventory":46,"category":"vegetable"},
 {"id":21,"name":"Beef - Kobe Striploin","inventory":81,"category":"meat"},
 {"id":22,"name":"Pork - Bacon","inventory":44,"category":"meat"},
 {"id":23,"name":"Pork - European Side Bacon","inventory":56,"category":"meat"},
-{"id":24,"name":"Pepper - Cayenne","inventory":99,"category":"vegetable"},
-{"id":25,"name":"Cheese - Feta","inventory":84,"category":"dairy"}]
+{"id":24,"name":"Pepper - Cayenne","inventory":0,"category":"vegetable"},
+{"id":25,"name":"Cheese - Feta","inventory":0,"category":"dairy"}]
 }

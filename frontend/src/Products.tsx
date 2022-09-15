@@ -3,6 +3,7 @@ import axios from 'axios';
 
 //import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 interface Product {
   id: Number;
@@ -29,6 +30,18 @@ const Products: React.FC<{}> = () => {
   return (
     <div>
       <h1 className='wiggly-piggly-header'>Welcome to the Wiggly Piggly!</h1>
+      <Dropdown>
+        <Dropdown.Toggle variant='success' id='dropdown-basic'>
+          Sort By:
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item href='#/action-1'>Category</Dropdown.Item>
+          <Dropdown.Item href='#/action-2'>Alphabetically</Dropdown.Item>
+          <Dropdown.Item href='#/action-3'>In Stock</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+
       {products.map((product: Product) => {
         return (
           <Card style={{ width: '18rem' }} className='all-products-cards'>
