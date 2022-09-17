@@ -1,28 +1,204 @@
 {
-  "products": 
-  [{"id":1,"name":"Cherries - Seedless","inventory":92,"category":"fruit"},
-{"id":2,"name":"Mushroom - Morels, Dry","inventory":10,"category":"vegetable"},
-{"id":3,"name":"Beets - Golden","inventory":10,"category":"vegetable"},
-{"id":4,"name":"Salad - Mixed, Veg","inventory":39,"category":"vegetable"},
-{"id":5,"name":"Potatoes - Purple, Organic","inventory":31,"category":"vegetable"},
-{"id":6,"name":"Cheese - Parmigiano Reggiano","inventory":29,"category":"dairy"},
-{"id":7,"name":"Fish - Frozen","inventory":56,"category":"meat"},
-{"id":8,"name":"Milk - Two Percent","inventory":4,"category":"dairy"},
-{"id":9,"name":"Squash - Magda","inventory":28,"category":"vegetable"},
-{"id":10,"name":"Bananas - Yellow","inventory":70,"category":"fruit"},
-{"id":11,"name":"Nantucket - Pomegranate Pear","inventory":3,"category":"fruit"},
-{"id":12,"name":"Cheese - Mascarpone","inventory":3,"category":"dairy"},
-{"id":13,"name":"Cheese - Goat With Herbs","inventory":70,"category":"dairy"},
-{"id":14,"name":"Fish - Salmon","inventory":59,"category":"meat"},
-{"id":15,"name":"Mushroom - King Trumpet","inventory":89,"category":"vegetable"},
-{"id":16,"name":"Beef - Ground","inventory":3,"category":"meat"},
-{"id":17,"name":"Seaweed - Green Sheets","inventory":77,"category":"vegetable"},
-{"id":18,"name":"Split Peas - Yellow, Dry","inventory":0,"category":"vegetable"},
-{"id":19,"name":"Juice - Lagoon Mango","inventory":54,"category":"fruit"},
-{"id":20,"name":"Squash - Chayote","inventory":46,"category":"vegetable"},
-{"id":21,"name":"Beef - Kobe Striploin","inventory":81,"category":"meat"},
-{"id":22,"name":"Pork - Bacon","inventory":44,"category":"meat"},
-{"id":23,"name":"Pork - European Side Bacon","inventory":56,"category":"meat"},
-{"id":24,"name":"Pepper - Cayenne","inventory":0,"category":"vegetable"},
-{"id":25,"name":"Cheese - Feta","inventory":0,"category":"dairy"}]
+  "products": [
+    {
+      "id": 1,
+      "name": "Cherries - Seedless",
+      "inventory": 83,
+      "category": "fruit",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Maraschino_cherries.jpg/260px-Maraschino_cherries.jpg",
+      "description": "A maraschino cherry is a preserved, sweetened cherry, typically made from light-colored sweet cherries such as the Royal Ann,[1] Rainier, or Gold varieties. In their modern form, the cherries are first preserved in a brine solution usually containing sulfur dioxide and calcium chloride to bleach the fruit, then soaked in a suspension of food coloring"
+    },
+    {
+      "id": 2,
+      "name": "Mushroom - Morels, Dry",
+      "inventory": 10,
+      "category": "vegetable",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Morchella_conica_1_beentree.jpg/220px-Morchella_conica_1_beentree.jpg",
+      "description": "Morchella, the true morels, is a genus of edible sac fungi closely related to anatomically simpler cup fungi in the order Pezizales (division Ascomycota). These distinctive fungi have a honeycomb appearance due to the network of ridges with pits composing their caps. Morels are prized by gourmet cooks"
+    },
+    {
+      "id": 3,
+      "name": "Beets - Golden",
+      "inventory": 9,
+      "category": "vegetable",
+      "image": "https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw8b45f8d9/images/products/vegetables/02818_01_touchstonegld.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196",
+      "description": "FULL SUN Native to the coastal regions of southern Europe, the beet has been cultivated since prehistoric times for its green tops. Not until the 1500s was the vegetable cultivated for its roots. Detroit Golden is an improved variety of an ancient beet known as 'Golden Beet' and grown in the US before 1828."
+    },
+    {
+      "id": 4,
+      "name": "Salad - Mixed, Veg",
+      "inventory": 39,
+      "category": "vegetable",
+      "image": "https://cdn.loveandlemons.com/wp-content/uploads/2021/04/green-salad-1-580x803.jpg",
+      "description": "The Romans, ancient Greeks, Persians and Indians ate mixed greens with dressing, a type of mixed salad. Salads, including layered and dressed salads, have been popular in Europe since the Greek and Roman imperial expansions."
+    },
+    {
+      "id": 5,
+      "name": "Potatoes - Purple, Organic",
+      "inventory": 31,
+      "category": "vegetable",
+      "image": "https://www.grubmarket.com/images/large/grubmarketproduce/4597936921_organic_stokes_purple_sweet_potatoes.jpg",
+      "description": "Purple inside and out, these delightful purple-blue potatoes are a crowd favorite! These small potatoes are great for mashing, baking, roasting or even making colorful hash browns!"
+    },
+    {
+      "id": 6,
+      "name": "Cheese - Parmigiano Reggiano",
+      "inventory": 29,
+      "category": "dairy",
+      "image": "https://viaverdimiami.com/wp-content/uploads/2017/07/parmagiano-Via-Verdi.jpg",
+      "description": "Legend has it, that around 900 years ago, Benedictine monks, living in the Parma-Reggio region of Italy, created this cheese when they needed to find a way to extend the shelf-life of the large quantity of milk they were producing."
+    },
+    {
+      "id": 7,
+      "name": "Fish - Frozen",
+      "inventory": 56,
+      "category": "meat",
+      "image": "https://www.thespruceeats.com/thmb/v4Zwn94MXb7ce1SO16sKbjTcde8=/940x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/148964914-56a2f6f35f9b58b7d0cfe462.jpg",
+      "description": "Delicious fish friends preserved in our well-constructed ice boxes"
+    },
+    {
+      "id": 8,
+      "name": "Milk - Two Percent",
+      "inventory": 4,
+      "category": "dairy",
+      "image": "https://img.livestrong.com/630x/clsd/getty/efbb3bdd392e4ac8a42802074aaa5941.jpg?type=webp",
+      "description": "Reduced-fat milk is labeled as 2 percent milk, which means the milkfat is 2 percent of the total weight of the milk—not that an 8-ounce glass of milk contains 2 percent fat."
+    },
+    {
+      "id": 9,
+      "name": "Squash - Magda",
+      "inventory": 28,
+      "category": "vegetable",
+      "image": "https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw1f1a9fe1/images/products/vegetables/2913_01_magda.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196",
+      "description": "Middle Eastern Cousa Magda is a summer squash available from June throughout the summer months."
+    },
+    {
+      "id": 10,
+      "name": "Bananas - Yellow",
+      "inventory": 0,
+      "category": "fruit",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Banana_and_cross_section.jpg/250px-Banana_and_cross_section.jpg",
+      "description": "The yellow sweet banana is a mutant strain of the cooking banana, discovered in 1836 by Jamaican Jean Francois Poujot, who found one of the banana trees on his plantation was bearing yellow fruit rather than green or red"
+    },
+    {
+      "id": 11,
+      "name": "Nantucket - Pomegranate Pear",
+      "inventory": 3,
+      "category": "fruit",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Pomegranate_fruit_-_whole_and_piece_with_arils.jpg/220px-Pomegranate_fruit_-_whole_and_piece_with_arils.jpg",
+      "description": "Crisp and refreshing blend of pomegranate and pear"
+    },
+    {
+      "id": 12,
+      "name": "Cheese - Mascarpone",
+      "inventory": 3,
+      "category": "dairy",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Mascarpone_2.jpg/220px-Mascarpone_2.jpg",
+      "description": "Mascarpone originated during the Middle Ages in Lombardy, a region in the northern part of Italy with a rich dairy and agricultural heritage. In the 1500s and 1600s, dairymen in the region became famous for selling fresh cheese curds, known as mascarpone."
+    },
+    {
+      "id": 13,
+      "name": "Cheese - Goat With Herbs",
+      "inventory": 70,
+      "category": "dairy",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Purple_haze_chevre.jpg/220px-Purple_haze_chevre.jpg",
+      "description": "Boursin [buʁsɛ̃] is a brand of Gournay cheese. It is a soft creamy cheese available in a variety of flavours, with a flavour and texture somewhat similar to cream cheese."
+    },
+    {
+      "id": 14,
+      "name": "Fish - Salmon",
+      "inventory": 59,
+      "category": "meat",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sashimi_-_Maguro_Restaurant%2C_Bangna%2C_Bangkok_%2844856596864%29.jpg/250px-Sashimi_-_Maguro_Restaurant%2C_Bangna%2C_Bangkok_%2844856596864%29.jpg",
+      "description": "Salmon is a common food fish classified as an oily fish with a rich content of protein and omega-3 fatty acids."
+    },
+    {
+      "id": 15,
+      "name": "Mushroom - King Trumpet",
+      "inventory": 89,
+      "category": "vegetable",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Seta_de_cardo_%28Pleurotus_eryngii%29%2C_2012-10-03%2C_DD_01.JPG/220px-Seta_de_cardo_%28Pleurotus_eryngii%29%2C_2012-10-03%2C_DD_01.JPG",
+      "description": ""
+    },
+    {
+      "id": 16,
+      "name": "Beef - Ground",
+      "inventory": 3,
+      "category": "meat",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Hackfleisch-1.jpg/220px-Hackfleisch-1.jpg",
+      "description": "Ground beef, minced beef or beef mince is beef that has been finely chopped with a knife or a meat grinder (American English) mincer or mincing machine (British English). It is used in many recipes including hamburgers, bolognese sauce, meatloaf, meatballs and kofta."
+    },
+    {
+      "id": 17,
+      "name": "Seaweed - Green Sheets",
+      "inventory": 77,
+      "category": "vegetable",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fucus_serratus_2015-09-08_ag_M0010140.jpg/220px-Fucus_serratus_2015-09-08_ag_M0010140.jpg",
+      "description": "Straight from the seas of monsters; Our seaweed will have you boasting like a seal"
+    },
+    {
+      "id": 18,
+      "name": "Split Peas - Yellow, Dry",
+      "inventory": 0,
+      "category": "vegetable",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Split_pea.jpg/200px-Split_pea.jpg",
+      "description": "You won't find a pea in this town split more precisely and evenly than here"
+    },
+    {
+      "id": 19,
+      "name": "Juice - Lagoon Mango",
+      "inventory": 54,
+      "category": "fruit",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Hapus_Mango.jpg/220px-Hapus_Mango.jpg",
+      "description": "Straight from the deep lagoons of Juiceville. Once you try this, you won't be able to let that man go!"
+    },
+    {
+      "id": 20,
+      "name": "Squash - Chayote",
+      "inventory": 46,
+      "category": "vegetable",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Chayote_BNC.jpg/220px-Chayote_BNC.jpg",
+      "description": "A cute, Colombian squash that makes the perfect addition to soups and stir fry's"
+    },
+    {
+      "id": 21,
+      "name": "Beef - Kobe Striploin",
+      "inventory": 81,
+      "category": "meat",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/4_Kobe_Beef%2C_Kobe_Japan.jpg/220px-4_Kobe_Beef%2C_Kobe_Japan.jpg",
+      "description": "Kobe's favorite beef! Need we say more? RIP"
+    },
+    {
+      "id": 22,
+      "name": "Pork - Bacon",
+      "inventory": 44,
+      "category": "meat",
+      "image": "https://cdn.shopify.com/s/files/1/0263/9711/4447/products/ThickBeacon_689ec902-8202-4c02-a10c-9d0d59ba3ec9_600x.jpg?v=1592929438",
+      "description": "Our bacon will have you beggin' for more!"
+    },
+    {
+      "id": 23,
+      "name": "Pork - European Side Bacon",
+      "inventory": 56,
+      "category": "meat",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Bacon.JPG/220px-Bacon.JPG",
+      "description": "European bacon is not always as satisfying as the crispy, streaky bacon that we are used to. It is made from the loin of a pig, and this means it is mostly meat, with a thin strip of fat on the top. It is much leaner than the American version of bacon."
+    },
+    {
+      "id": 24,
+      "name": "Pepper - Cayenne",
+      "inventory": 0,
+      "category": "vegetable",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Capsicum_annuum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-027.jpg/220px-Capsicum_annuum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-027.jpg",
+      "description": "cultivated in Mexico 7,000 years ago and in Peru 4,000 years ago. Native Americans have used cayenne as a food and as a medicine for stomach aches, cramping pains, gas , and disorders of the circulatory system for 9,000 years. Cayenne was brought to Europe in the fifteenth century by Christopher Columbus."
+    },
+    {
+      "id": 25,
+      "name": "Cheese - Feta",
+      "inventory": 0,
+      "category": "dairy",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Feta_Cheese.jpg/250px-Feta_Cheese.jpg",
+      "description": "The Greek word feta (φέτα) comes from the Italian fetta 'slice', which in turn is derived from the Latin offa 'morsel, piece'. The word feta became widespread as a name for the cheese only in the 19th century, probably referring to the cheese being cut to pack it in barrels."
+    }
+  ]
 }

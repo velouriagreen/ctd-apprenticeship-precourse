@@ -45,7 +45,7 @@ const Meat: React.FC<{}> = () => {
         id='uncontrolled-tab-example'
         className='mb-3'
       >
-        <Tab eventKey='home' title='All Dairy Products'>
+        <Tab eventKey='home' title='All Meat Products'>
           {meat.map((product: Product) => {
             return (
               <Card style={{ width: '18rem' }}>

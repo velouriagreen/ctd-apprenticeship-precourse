@@ -31,6 +31,15 @@ const Fruit: React.FC<{}> = () => {
   }, []);
 
   //1. Sort alphabetically
+  const alphabeticalFruit = fruit.sort(
+    (productA: Product, productB: Product) => {
+      let fruitA = productA.name[0].toUpperCase();
+      let fruitB = productB.name[0].toUpperCase();
+
+      return fruitA < fruitB ? -1 : fruitA > fruitB ? 1 : 0;
+    }
+  );
+  console.log('abc fruit', alphabeticalFruit);
 
   //2. Sort by inventory
   const inStock = fruit.filter((product: Product) => {
@@ -39,13 +48,13 @@ const Fruit: React.FC<{}> = () => {
 
   return (
     <div>
-      <h1>Welcome to the Wiggly Piggly Veggie Section</h1>
+      <h1>Welcome to the Wiggly Piggly Fruit Section</h1>
       <Tabs
         defaultActiveKey='profile'
         id='uncontrolled-tab-example'
         className='mb-3'
       >
-        <Tab eventKey='home' title='All Dairy Products'>
+        <Tab eventKey='home' title='All Fruit Products'>
           {fruit.map((product: Product) => {
             return (
               <Card style={{ width: '18rem' }}>
@@ -60,6 +69,20 @@ const Fruit: React.FC<{}> = () => {
         </Tab>
         <Tab eventKey='profile' title='In Stock'>
           {inStock.map((product: Product) => {
+            return (
+              <Card style={{ width: '18rem' }}>
+                <Card.Img variant='top' src='holder.js/100px180' />
+                <Card.Body>
+                  <Card.Title>{product.name}</Card.Title>
+                  <Card.Text>Some context here</Card.Text>
+                </Card.Body>
+              </Card>
+            );
+          })}
+        </Tab>
+
+        <Tab eventKey='profile' title='A - Z'>
+          {alphabeticalFruit.map((product: Product) => {
             return (
               <Card style={{ width: '18rem' }}>
                 <Card.Img variant='top' src='holder.js/100px180' />

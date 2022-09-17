@@ -6,10 +6,7 @@ import NavigationBar from './Navbar';
 import './App.css';
 import Products from './Products';
 import Categories from './Categories/Categories';
-import Dairy from './Categories/Dairy';
-import Meat from './Categories/Meat';
-import Vegetables from './Categories/Vegetables';
-import Fruit from './Categories/Fruit';
+import Product from './Product';
 
 function App() {
   return (
@@ -18,11 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Products />} />
-          <Route path='/categories' element={<Categories />} />
-          <Route path='/dairy' element={<Dairy />} />
-          <Route path='/meat' element={<Meat />} />
-          <Route path='/vegetables' element={<Vegetables />} />
-          <Route path='/fruit' element={<Fruit />} />
+          <Route path='/products/:productId' element={<Product />} />
         </Routes>
       </BrowserRouter>
     </div>
