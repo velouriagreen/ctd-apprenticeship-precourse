@@ -36,12 +36,12 @@ export const Email = ({ setShowModal, product }: Props) => {
         setShowSuccessMessage(true);
       },
       (error) => {
-        console.log(error.response);
+        //console.log(error.response);
         console.log(error.text);
       }
     );
   };
-  console.log(process.env.REACT_APP_TEMPLATE_ID);
+  //console.log(process.env.REACT_APP_TEMPLATE_ID);
 
   return (
     <div>

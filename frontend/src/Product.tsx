@@ -5,14 +5,6 @@ import { useParams } from 'react-router-dom';
 
 import Card from 'react-bootstrap/Card';
 
-interface iProduct {
-  name: String;
-  image: String;
-  description: String;
-  inventory: Number;
-  category: String;
-}
-
 const Product: React.FC<{}> = () => {
   const params = useParams();
   const [product, setProduct] = useState({});
@@ -23,7 +15,7 @@ const Product: React.FC<{}> = () => {
       // Making an axios call to grab the single product information dynamically
       .get(`http://localhost:3001/products/${params.productId}`)
       .then((res) => {
-        console.log('res', res.data);
+        //console.log('res', res.data);
         setProduct(res.data);
       })
       .catch((err) => {

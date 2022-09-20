@@ -6,11 +6,7 @@ import Email from './Email';
 //import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
-import SplitButton from 'react-bootstrap/SplitButton';
 import Container from 'react-bootstrap/Container';
 
 interface Product {
@@ -33,7 +29,7 @@ const Products: React.FC<{}> = () => {
     axios
       .get('http://localhost:3001/products')
       .then((res) => {
-        console.log(res);
+        //console.log(res);
         setProducts(res.data);
       })
       .catch((err) => {
@@ -45,7 +41,7 @@ const Products: React.FC<{}> = () => {
     // If the updatedInventory is <= 0
     // Disable decrementing
     // Make sure not to update the backend/frontend
-    // Send out an email (research emailjs react)
+    // Send out an email
     if (updatedInventory <= 0) {
       setShowModal(true);
       setCurrentProduct(product);
@@ -61,7 +57,7 @@ const Products: React.FC<{}> = () => {
         const updatedProducts: Array<Product> = products.map((currProduct) => {
           //if the current product matches the product id, then
           if (product.id === currProduct.id) {
-            console.log('true?');
+            //console.log('true?');
             //update the inventory key with the updatedInventory
             return { ...currProduct, inventory: updatedInventory };
           } else {
@@ -69,17 +65,17 @@ const Products: React.FC<{}> = () => {
           }
         });
         setProducts(updatedProducts);
-        console.log('updatedProducts in put request', res.data);
+        //console.log('updatedProducts in put request', res.data);
       })
       .catch((err) => {
         console.error(err);
       });
   };
 
+  /**************** SORT A-Z ****************/
+
   //override const
   let updatedProducts = products;
-
-  /**************** SORT A-Z ****************/
   //first checking to see if category is present/not null
   if (category) {
     //Update products array to be an array of the selected category's products
@@ -115,7 +111,7 @@ const Products: React.FC<{}> = () => {
   }, []);
 
   //console.log('uniqyw', uniqueCategories);
-  console.log('current category filter', category);
+  //console.log('current category filter', category);
   //eventKey is passed to the <Nav> onSelect callback and
   // is used to set the <Nav> component's activeKey prop.
 
@@ -135,7 +131,6 @@ const Products: React.FC<{}> = () => {
           <Dropdown.Menu>
             <Dropdown.Item eventKey='A-Z'>A - Z</Dropdown.Item>
             <Dropdown.Item eventKey='Z-A'>Z - A</Dropdown.Item>
-            {/* <Dropdown.Item>In Stock</Dropdown.Item> */}
           </Dropdown.Menu>
         </Dropdown>
 
