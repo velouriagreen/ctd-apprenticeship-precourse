@@ -11,7 +11,6 @@ const NavigationBar: React.FC<{}> = () => {
           <Navbar.Brand href='#home'>Piggly Wiggly</Navbar.Brand>
           <Nav className='me-auto'>
             <Nav.Link href='/'>Home</Nav.Link>
-            <Nav.Link href='/categories'>Categories</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

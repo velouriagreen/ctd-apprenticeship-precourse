@@ -1,17 +1,22 @@
 # Routes
-1. Home (/)
-Home is going to contain most of our application, showing us a list of all the products (products.tsx component). Will have the ability to filter by in stock or out of stock and by category. Also gonna implement sorting alphabetically. 
 
 
-2. Single Product Page will be a dynamic route (/products/:productId). This page will contain the ability to delete a product
+Piggly Wiggly
 
-Example of a Dynamic Route: /products/1
-Static Route: /home
+This application displays the list of Piggly Wiggly's products. Each product belongs to a specific category (Fruit, Vegetables, Dairy, Meat). With this application, the user is able to :
 
-3. Create Product Page (/create)
+-sort the products alphabetically 
+-sort the product via category
+-increment and decrement the inventory of product
+-send an email when the product's inventory is empty.
 
-This page will have a few inputs that will allow a user to create a product. Some form of validation will follow after user creates a successful input.
 
-(Look up mobile first design. Responsive as in it conforms to all types of screens UI Framework);
+To run the application:
+
+-fork the repository and clone it into your machine
+-cd to the project folder and run npm install
+-run npm start to start the server. The server will run at port 3001.
+-run npm run db to start the database
+
 
 

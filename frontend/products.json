@@ -195,7 +195,7 @@
     {
       "id": 25,
       "name": "Cheese - Feta",
-      "inventory": 0,
+      "inventory": 1,
       "category": "dairy",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Feta_Cheese.jpg/250px-Feta_Cheese.jpg",
       "description": "The Greek word feta (φέτα) comes from the Italian fetta 'slice', which in turn is derived from the Latin offa 'morsel, piece'. The word feta became widespread as a name for the cheese only in the 19th century, probably referring to the cheese being cut to pack it in barrels."
