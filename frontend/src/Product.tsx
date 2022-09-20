@@ -3,9 +3,15 @@ import axios from 'axios';
 
 import { useParams } from 'react-router-dom';
 
-// Grab the productId variable from the URL
-// Make an axios to grab the single product information
-// SHow that porudct on the page
+import Card from 'react-bootstrap/Card';
+
+interface iProduct {
+  name: String;
+  image: String;
+  description: String;
+  inventory: Number;
+  category: String;
+}
 
 const Product: React.FC<{}> = () => {
   const params = useParams();
@@ -13,6 +19,8 @@ const Product: React.FC<{}> = () => {
 
   useEffect(() => {
     axios
+      // Grabbing the productId variable from the URL with useParams
+      // Making an axios call to grab the single product information dynamically
       .get(`http://localhost:3001/products/${params.productId}`)
       .then((res) => {
         console.log('res', res.data);
@@ -23,7 +31,15 @@ const Product: React.FC<{}> = () => {
       });
   }, [params.productId]); //dependency array
 
-  return <div>{product.name}</div>;
+  return (
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant='top' src={product.image} />
+      <Card.Body>
+        <Card.Title>{product.name}</Card.Title>
+        <Card.Text>{product.description}</Card.Text>
+      </Card.Body>
+    </Card>
+  );
 };
 
 export default Product;
