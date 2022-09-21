@@ -5,9 +5,16 @@ import { useParams } from 'react-router-dom';
 
 import Card from 'react-bootstrap/Card';
 
+interface iProduct {
+  name: string;
+  inventory: number;
+  description: string;
+  image: string;
+}
+
 const Product: React.FC<{}> = () => {
   const params = useParams();
-  const [product, setProduct] = useState({});
+  const [product, setProduct] = useState<iProduct>({});
 
   useEffect(() => {
     axios

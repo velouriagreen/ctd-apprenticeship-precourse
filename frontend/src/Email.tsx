@@ -5,12 +5,12 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 
 interface Product {
-  id: Number;
-  name: String;
-  inventory: Number;
-  category: String;
-  description: String;
-  image: String;
+  id: number;
+  name: string;
+  inventory: number;
+  category: string;
+  description: string;
+  image: string;
 }
 
 interface Props {
@@ -22,6 +22,9 @@ export const Email = ({ setShowModal, product }: Props) => {
   const handleClose = () => setShowModal(false);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const form = useRef<HTMLFormElement>(null);
+  /**useRef returns a mutable ref object whose .current property is initialized to the passed
+   * argument (initialValue). The returned object will persist for the full lifetime
+   * of the component. */
 
   const SERVICE_ID: string | undefined = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE_ID: string | undefined = process.env.REACT_APP_TEMPLATE_ID;
@@ -29,7 +32,6 @@ export const Email = ({ setShowModal, product }: Props) => {
 
   const sendEmail = (e: React.SyntheticEvent) => {
     e.preventDefault();
-
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
       (result) => {
         console.log(result.text);

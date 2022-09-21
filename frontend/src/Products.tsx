@@ -10,12 +10,12 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 
 interface Product {
-  id: Number;
-  name: String;
-  inventory: Number;
-  category: String;
-  description: String;
-  image: String;
+  id: number;
+  name: string;
+  inventory: number;
+  category: string;
+  description: string;
+  image: string;
 }
 
 const Products: React.FC<{}> = () => {
@@ -103,12 +103,15 @@ const Products: React.FC<{}> = () => {
   /*******************CATEGORY SORT DROPDOWN MENU**************/
 
   //if category is selected in dropdown menu, then returning updated categories array to include current, selected category
-  const uniqueCategories = products.reduce((categories, product) => {
-    if (!categories.includes(product.category)) {
-      categories.push(product.category);
-    }
-    return categories;
-  }, []);
+  const uniqueCategories = products.reduce<string[]>(
+    (categories, product: Product) => {
+      if (!categories.includes(product.category)) {
+        categories.push(product.category);
+      }
+      return categories;
+    },
+    []
+  );
 
   //console.log('uniqyw', uniqueCategories);
   //console.log('current category filter', category);
